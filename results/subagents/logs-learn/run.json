@@ -1,0 +1,69 @@
+{
+  "task": "logs-learn",
+  "condition": "subagents",
+  "role": "learn",
+  "timestamp": "2026-10-06T11:03:34.362187+00:00",
+  "error": "APIStatusError: Error code: 402 - {'error': {'message': 'This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.', 'code': 402, 'metadata': {'reason': 'in_flight_budget_exhausted', 'limit_source': 'openrouter_in_flight_budget', 'remedy_hint': 'Retry after your in-flight requests settle (see the Retry-After header). Adding credits at https://openrouter.ai/settings/credits raises your in-flight budget, up to a capped ceiling.', 'headers': {'Retry-After': '120'}, 'provider_name': None}}, 'user_id': 'user_3JrHBPxIB24wyWUaYAdPttnT2NA'}",
+  "skills_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "seconds": 8.4,
+  "tokens": {
+    "input": 19272,
+    "output": 131,
+    "total": 19403
+  },
+  "tool_calls": 5,
+  "subagent_calls": 0,
+  "skills_read": 0,
+  "skills_modified": false,
+  "final_message": "",
+  "score": 0.0,
+  "passed": 0,
+  "total": 9,
+  "checks": [
+    {
+      "name": "valid_structure",
+      "passed": false,
+      "detail": "FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/w1/qrx0spw12j5_sbd3nt_8w96w0000gp/T/lab-sandbox-9z7zcgw0/workspace/errors.json'"
+    },
+    {
+      "name": "entry_count",
+      "passed": false,
+      "detail": "FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/w1/qrx0spw12j5_sbd3nt_8w96w0000gp/T/lab-sandbox-9z7zcgw0/workspace/errors.json'"
+    },
+    {
+      "name": "timestamps_utc",
+      "passed": false,
+      "detail": "FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/w1/qrx0spw12j5_sbd3nt_8w96w0000gp/T/lab-sandbox-9z7zcgw0/workspace/errors.json'"
+    },
+    {
+      "name": "exception_fields",
+      "passed": false,
+      "detail": "FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/w1/qrx0spw12j5_sbd3nt_8w96w0000gp/T/lab-sandbox-9z7zcgw0/workspace/errors.json'"
+    },
+    {
+      "name": "repeat_counts",
+      "passed": false,
+      "detail": "FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/w1/qrx0spw12j5_sbd3nt_8w96w0000gp/T/lab-sandbox-9z7zcgw0/workspace/errors.json'"
+    },
+    {
+      "name": "counts_by_service",
+      "passed": false,
+      "detail": "FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/w1/qrx0spw12j5_sbd3nt_8w96w0000gp/T/lab-sandbox-9z7zcgw0/workspace/errors.json'"
+    },
+    {
+      "name": "rule_service_names",
+      "passed": false,
+      "detail": "FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/w1/qrx0spw12j5_sbd3nt_8w96w0000gp/T/lab-sandbox-9z7zcgw0/workspace/errors.json'"
+    },
+    {
+      "name": "rule_sorted_errors",
+      "passed": false,
+      "detail": "FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/w1/qrx0spw12j5_sbd3nt_8w96w0000gp/T/lab-sandbox-9z7zcgw0/workspace/errors.json'"
+    },
+    {
+      "name": "rule_schema_header",
+      "passed": false,
+      "detail": "FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/w1/qrx0spw12j5_sbd3nt_8w96w0000gp/T/lab-sandbox-9z7zcgw0/workspace/errors.json'"
+    }
+  ]
+}
