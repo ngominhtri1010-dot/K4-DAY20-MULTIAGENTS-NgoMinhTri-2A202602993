@@ -149,3 +149,11 @@ Subagents/logs-learn: 29,9 giây, 51.144 token, 8 tool call, HTTP 402 in_flight_
 ### Lần kiểm tra OpenRouter gần nhất
 
 Chạy lại subagents/logs-learn với max_tokens=2048: 8.4 giây, 19,403 token ghi nhận; lỗi HTTP 402 in_flight_budget_exhausted, Retry-After=120. Chưa hoàn thành; điểm workspace 0/9 không dùng làm kết quả chất lượng tác tử. Bản ghi lỗi cũ đã xóa; chỉ giữ bản mới nhất trong thư mục chính.
+
+### Trạng thái lần chạy mới nhất
+
+Kiểm tra OpenRouter với tối đa 64 token trả OK. Chạy subagents/logs-learn với max_tokens=2048 bị HTTP 402 openrouter_credits ngay sau 0,5 giây: API chỉ đủ 1755 token đầu ra cho yêu cầu này; 0 token ghi nhận và 0 tool call. Tác vụ chưa hoàn thành. Kết quả mới ghi đè bản lỗi cũ trong thư mục chính, không tạo thư mục retry.
+
+### Phương án miễn phí đã thử
+
+Đã thử model cohere/north-mini-code:free bằng khóa hiện tại: gọi công cụ thành công. Tác vụ logs-learn subagents lưu riêng tại results-free/; lỗi 429 free-models-per-day sau 576,2 giây, 754.769 token callback ghi nhận, workspace 0/9. Không ghép vào bảng chính vì khác model và tác vụ chưa hoàn thành. Chi tiết và lệnh tái lập ở report/FREE_MODEL.md. API báo reset hạn mức miễn phí lúc 07:00 ngày 07/10/2026 giờ Việt Nam.
